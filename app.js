@@ -26,7 +26,7 @@ app.use(express.json()); // <- parse req.body
 app.get('/', (req, res) => {
   res.send('e-commerce api');
 });
-app.use('api/v1/auth', authRouter);
+app.use('/api/v1/auth', authRouter);
 
 app.use(notFoundMiddleWare);
 app.use(errorHandlerMiddleWare);
