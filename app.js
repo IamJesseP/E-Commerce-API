@@ -15,6 +15,7 @@ const connectDB = require('./db/connect');
 
 // routers
 const authRouter = require('./routes/authRoutes');
+const userRouter = require('./routes/userRoutes');
 
 // middleware
 const notFoundMiddleWare = require('./middleware/not-found');
@@ -28,6 +29,7 @@ app.get('/', (req, res) => {
   res.send('e-commerce api');
 });
 app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/users', userRouter);
 
 app.use(notFoundMiddleWare);
 app.use(errorHandlerMiddleWare);
