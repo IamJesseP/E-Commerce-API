@@ -15,7 +15,7 @@ router
     user.getAllUsers,
   );
 router.route('/showMe').get(authenticateUser, user.showCurrentUser);
-router.route('/updateUser').patch(user.updateUser);
+router.route('/updateUser').patch(authenticateUser, user.updateUser);
 router
   .route('/updateUserPassword')
   .patch(authenticateUser, user.updateUserPassword);
