@@ -7,7 +7,13 @@ const {
 
 const router = express.Router();
 
-router.route('/').get(authenticateUser, authorizePermissions, user.getAllUsers);
+router
+  .route('/')
+  .get(
+    authenticateUser,
+    authorizePermissions('admin', 'user'),
+    user.getAllUsers,
+  );
 router.route('/showMe').get(user.showCurrentUser);
 router.route('/updateUser').patch(user.updateUser);
 router.route('/updateUserPassword').patch(user.updateUserPassword);
