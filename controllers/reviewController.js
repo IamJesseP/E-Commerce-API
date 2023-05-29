@@ -44,7 +44,14 @@ const updateReview = async (req, res) => {
   res.send('update review route');
 };
 const deleteReview = async (req, res) => {
-  res.send('delete review route');
+  const { _id: reviewId } = req.params;
+  const review = await Review.findOne(reviewId);
+  if (!review) {
+    throw new CustomError.NotFoundError(`No review with id: ${reviewId}`);
+  }
+  checkPermissions(req.user, review.user);
+  await review.deleteOne();
+  res.status(StatusCodes.OK).json({ msg: 'Review deleted' });
 };
 
 module.exports = {
