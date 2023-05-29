@@ -8,7 +8,8 @@ const createProduct = async (req, res) => {
   res.status(StatusCodes.CREATED).json({ product });
 };
 const getAllProducts = async (req, res) => {
-  res.send('get all products route');
+  const product = await Product.find({});
+  res.status(StatusCodes.OK).json({ product });
 };
 const getSingleProduct = async (req, res) => {
   res.send('get single product route');

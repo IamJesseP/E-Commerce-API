@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 const { StatusCodes } = require('http-status-codes');
 const User = require('../models/User');
 const CustomError = require('../errors');
