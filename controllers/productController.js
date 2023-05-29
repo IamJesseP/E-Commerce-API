@@ -20,7 +20,11 @@ const getSingleProduct = async (req, res) => {
   res.status(StatusCodes.OK).json({ product });
 };
 const updateProduct = async (req, res) => {
-  res.send('update product route');
+  const productId = req.params.id;
+  const product = await Product.findOneAndUpdate(productId, req.body, {
+    new: true,
+    runValidators: true,
+  });
 };
 const deleteProduct = async (req, res) => {
   res.send('delete product route');
