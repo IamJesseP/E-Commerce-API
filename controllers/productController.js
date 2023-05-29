@@ -12,7 +12,12 @@ const getAllProducts = async (req, res) => {
   res.status(StatusCodes.OK).json({ product });
 };
 const getSingleProduct = async (req, res) => {
-  res.send('get single product route');
+  const productId = req.params.id;
+  const product = await Product.findById(productId);
+  if (!product) {
+    throw new CustomError.NotFoundError(`No product with id : ${productId}`);
+  }
+  res.status(StatusCodes.OK).json({ product });
 };
 const updateProduct = async (req, res) => {
   res.send('update product route');
