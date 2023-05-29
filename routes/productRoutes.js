@@ -13,6 +13,7 @@ const {
   deleteProduct,
   uploadImage,
 } = require('../controllers/productController');
+const { getSingleProductReviews } = require('../controllers/reviewController');
 
 router.get('/', getAllProducts);
 router.post(
@@ -41,5 +42,6 @@ router.delete(
 );
 
 router.get('/:id', getSingleProduct);
+router.get('/:id/reviews', getSingleProductReviews);
 
 module.exports = router;
