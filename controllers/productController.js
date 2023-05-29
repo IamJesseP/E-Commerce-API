@@ -9,7 +9,7 @@ const createProduct = async (req, res) => {
   res.status(StatusCodes.CREATED).json({ product });
 };
 const getAllProducts = async (req, res) => {
-  const product = await Product.find({});
+  const product = await Product.find({}).populate('reviews');
   res.status(StatusCodes.OK).json({ product });
 };
 const getSingleProduct = async (req, res) => {
