@@ -2,11 +2,7 @@ const { StatusCodes } = require('http-status-codes');
 const CustomError = require('../errors');
 const Review = require('../models/Review');
 const Product = require('../models/Product');
-const {
-  createTokenUser,
-  attachCookiesToRes,
-  checkPermissions,
-} = require('../utils');
+const { checkPermissions } = require('../utils');
 
 const createReview = async (req, res) => {
   const { product: productId } = req.body;
@@ -41,7 +37,18 @@ const getSingleReview = async (req, res) => {
   res.status(StatusCodes.CREATED).json({ review });
 };
 const updateReview = async (req, res) => {
-  res.send('update review route');
+  const { _id: reviewId } = req.params;
+  const { rating, title, comment } = req.body;
+  const review = await Review.findOne(reviewId);
+  if (!review) {
+    throw new CustomError.NotFoundError(`No review with id: ${reviewId}`);
+  }
+  checkPermissions(req.user, review.user);
+  review.rating = rating;
+  review.title = title;
+  review.comment = comment;
+  await review.save();
+  res.status(StatusCodes.OK).json({ review });
 };
 const deleteReview = async (req, res) => {
   const { _id: reviewId } = req.params;
