@@ -21,13 +21,23 @@ const getSingleProduct = async (req, res) => {
 };
 const updateProduct = async (req, res) => {
   const productId = req.params.id;
-  const product = await Product.findOneAndUpdate(productId, req.body, {
+  const product = await Product.findOneAndUpdate({ _id: productId }, req.body, {
     new: true,
     runValidators: true,
   });
+  if (!product) {
+    throw new CustomError.NotFoundError(`No product with id : ${productId}`);
+  }
+  res.status(StatusCodes.OK).json({ product });
 };
 const deleteProduct = async (req, res) => {
-  res.send('delete product route');
+  const productId = req.params.id;
+  const product = await Product.findById(productId);
+  if (!product) {
+    throw new CustomError.NotFoundError(`No product with id : ${productId}`);
+  }
+  await product.deleteOne();
+  res.status(StatusCodes.OK).json({ msg: 'Product removed.' });
 };
 const uploadImage = async (req, res) => {
   res.send('upload image route');
