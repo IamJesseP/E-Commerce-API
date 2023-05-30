@@ -7,7 +7,6 @@ const express = require('express');
 const app = express();
 
 // misc. packages
-const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const fileUpload = require('express-fileupload');
 
@@ -44,16 +43,13 @@ app.use(cors());
 app.use(xss());
 app.use(mongoSanitize());
 
-app.use(morgan('tiny'));
 app.use(express.json()); // <- parse req.body
 app.use(cookieParser(process.env.JWT_SECRET));
 
 app.use(express.static('./public'));
 app.use(fileUpload());
 // homepage route
-app.get('/', (req, res) => {
-  res.send('e-commerce api');
-});
+
 app.use('/api/v1/auth', authRouter);
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/products', productRouter);
