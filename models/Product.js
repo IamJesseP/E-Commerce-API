@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 const mongoose = require('mongoose');
 
 const ProductSchema = new mongoose.Schema(
@@ -54,6 +55,10 @@ const ProductSchema = new mongoose.Schema(
       default: 15,
     },
     averageRating: {
+      type: Number,
+      default: 0,
+    },
+    numOfReviews: {
       type: Number,
       default: 0,
     },
