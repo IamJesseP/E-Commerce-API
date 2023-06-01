@@ -1,0 +1,65 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.1.0 (2023-06-01)
+
+
+### Features
+
+* add authentication to .get routes ([f2406be](https://github.com/IamJesseP/E-Commerce-API/commit/f2406be268cbd634e04520ac634c69efe88aafe6))
+* add authorization based off user role ([238ef39](https://github.com/IamJesseP/E-Commerce-API/commit/238ef39287bc4771aa700d96cc332005ad449e6c))
+* Add basic express server setup ([eb95a59](https://github.com/IamJesseP/E-Commerce-API/commit/eb95a592a3c588f1f2a03408ed1937c2758dfc07))
+* add checkPermissions functionality ([99ceade](https://github.com/IamJesseP/E-Commerce-API/commit/99ceade569989085bdc70f8945a13d2d2c7f408b))
+* add create order functionality ([b01feb4](https://github.com/IamJesseP/E-Commerce-API/commit/b01feb42e30f66776f7652dfdd1fea9db7b8de3d))
+* add createProduct functionality ([ff2cca9](https://github.com/IamJesseP/E-Commerce-API/commit/ff2cca9531b59dfc2b3ecf6d4867846d8ae803cc))
+* add createReview and getAllReviews logic ([df7ed57](https://github.com/IamJesseP/E-Commerce-API/commit/df7ed57da210c06f677ebcb62848730a70ec1fb8))
+* add database connection ([18e7b0f](https://github.com/IamJesseP/E-Commerce-API/commit/18e7b0fd1ec8196e3e55bb8eb080d64531898531))
+* add delete review functionality ([a6266e1](https://github.com/IamJesseP/E-Commerce-API/commit/a6266e13957007400de9928e34cef746f0bdddf1))
+* add deleteProduct functionality ([1f3c414](https://github.com/IamJesseP/E-Commerce-API/commit/1f3c41490e4e5acc5d079d74f704e29ad87b4225))
+* add documentation, generated with docgen ([5ef6e74](https://github.com/IamJesseP/E-Commerce-API/commit/5ef6e745415a1649d91c9cc88d46a43323a8c245))
+* add getAllProducts functionality ([6f95457](https://github.com/IamJesseP/E-Commerce-API/commit/6f954570850fec512b8c145e6503355032b24b98))
+* add getAllUsers and getSingleUser functionality ([ca6573d](https://github.com/IamJesseP/E-Commerce-API/commit/ca6573d4446dcd43dac854f8e3a62f29c65802e1))
+* add getSingleProduct fucntionality ([d879dc4](https://github.com/IamJesseP/E-Commerce-API/commit/d879dc469b4e69f8006a6414e5e09aa5c712f85e))
+* add getSingleProductReviews functionality ([7150568](https://github.com/IamJesseP/E-Commerce-API/commit/7150568b57b77fc09e8b99204cedf590129e53c6))
+* add getSingleReview functionality ([45ab2f1](https://github.com/IamJesseP/E-Commerce-API/commit/45ab2f1bcbf5ba219827b33060c2d8fcd0ef249e))
+* add image file uploading functionality ([1669f9f](https://github.com/IamJesseP/E-Commerce-API/commit/1669f9f3197ffeb373a65d5030cd3d85a357e3f3))
+* add initial authentication setup ([24dcb39](https://github.com/IamJesseP/E-Commerce-API/commit/24dcb39ef05bfc2836c003ebd7e360c335a57de6))
+* add jwt functionality to register user ([afdef32](https://github.com/IamJesseP/E-Commerce-API/commit/afdef32fba5eb9f83080a32932e6624a5411db9a))
+* add login functionality ([e887df9](https://github.com/IamJesseP/E-Commerce-API/commit/e887df9242d3a780b51d4c0b4d7bb70bbb6b1282))
+* add logout functionality ([379aeab](https://github.com/IamJesseP/E-Commerce-API/commit/379aeab9f6284e70bc6111a241d92c7ecd6fe73c))
+* add order controller functionality ([8fc8dab](https://github.com/IamJesseP/E-Commerce-API/commit/8fc8dabe1a4e8c2c0149d217084c2d69cbb196d5))
+* add order mongoose schema ([d7af373](https://github.com/IamJesseP/E-Commerce-API/commit/d7af37357f0ecabc2a26ad932d574bf8da91331a))
+* add password hashing/comparing using bcrypt ([12b5359](https://github.com/IamJesseP/E-Commerce-API/commit/12b53591915d8856b46acf77c43db05236e2b891))
+* add populate method to 'get' review routes ([c3de72f](https://github.com/IamJesseP/E-Commerce-API/commit/c3de72fca5a5fca18292a8ec3ba3f843c3c5589d))
+* add populate method to getAllProducts ([2235c9e](https://github.com/IamJesseP/E-Commerce-API/commit/2235c9e81b97c22b572ed34a21694583891fb321))
+* add product controller/route structure ([589c7ef](https://github.com/IamJesseP/E-Commerce-API/commit/589c7efdaba7c9543714eab9b0db560283c1c5a4))
+* add product schema model ([1c60c42](https://github.com/IamJesseP/E-Commerce-API/commit/1c60c42211257e3685dc47429d185eb9f7933ed4))
+* add register user functionality ([337e0f6](https://github.com/IamJesseP/E-Commerce-API/commit/337e0f66712f2b7aedf215053dcbd09d7bb8c36c))
+* add REST structure for reviews ([a13b9be](https://github.com/IamJesseP/E-Commerce-API/commit/a13b9be8abcdd128d681f015e6388497e3cc794b))
+* add review mongoose schema ([0f61b66](https://github.com/IamJesseP/E-Commerce-API/commit/0f61b6687b7e26ad41b107a6205920d14ff2cb93))
+* add security packages ([f2b5209](https://github.com/IamJesseP/E-Commerce-API/commit/f2b5209d75370deb33e3dbec45408296688e7cde))
+* add showCurrentUser functionality ([44b3190](https://github.com/IamJesseP/E-Commerce-API/commit/44b3190f665eca444aee78015c6db748514a3f02))
+* add update review functionality ([727592e](https://github.com/IamJesseP/E-Commerce-API/commit/727592ed30eb476b29afc5d5baf6aebed97aafa5))
+* add updatePassword functionality ([68bbea3](https://github.com/IamJesseP/E-Commerce-API/commit/68bbea331daa5794da8412790298c5b14d4e8869))
+* add updateProduct functionality ([e4c13a0](https://github.com/IamJesseP/E-Commerce-API/commit/e4c13a065ebe21f250cbc3188981f16576de40e8))
+* add updateUser functionality ([46f5687](https://github.com/IamJesseP/E-Commerce-API/commit/46f5687ede92757e929650570a0150f2a7369591))
+* add user controller and routes structure ([e7ce93f](https://github.com/IamJesseP/E-Commerce-API/commit/e7ce93f8928174c52d02c9c31efe9807ea28620f))
+* add user schema to models, config packages ([1f8e1d7](https://github.com/IamJesseP/E-Commerce-API/commit/1f8e1d7129349c1e8ff0b5bbfd1b1cd03edc6a10))
+* authorize user roles dynamically ([3847f38](https://github.com/IamJesseP/E-Commerce-API/commit/3847f38fc550cbbee018247e817735def6f541ba))
+* basic routes and middleware ([52bc945](https://github.com/IamJesseP/E-Commerce-API/commit/52bc945e8015bd5d351f6e55d51ee4e34444ad11))
+* create averageRating and review count ([9445271](https://github.com/IamJesseP/E-Commerce-API/commit/94452712e9900fb6e226b7ef38a42459f8957eaa))
+* create REST structure for orders ([bc7ebaa](https://github.com/IamJesseP/E-Commerce-API/commit/bc7ebaa6fe683b3fa4ec6db458f5ced78ba084d6))
+* delete related reviews when deleting product ([f53e402](https://github.com/IamJesseP/E-Commerce-API/commit/f53e4027ccc468677dc07af17b1be030be4291df))
+* send jwt through cookies ([1ab7d57](https://github.com/IamJesseP/E-Commerce-API/commit/1ab7d572eb15acdcd83cbc5e4f69944e690fdd44))
+
+
+### Bug Fixes
+
+* Add boilerplate and packages for start of project ([2fb6b0e](https://github.com/IamJesseP/E-Commerce-API/commit/2fb6b0e7fed63a09234452c6138ecde398adb38f))
+* adjust documentation ([ab6bfd8](https://github.com/IamJesseP/E-Commerce-API/commit/ab6bfd8d1f31eeb26c037b7b276fb5370737691c))
+* adjust documentation to show correct CRUD requests ([e1a1cf6](https://github.com/IamJesseP/E-Commerce-API/commit/e1a1cf64953f63b2dcfeafa4f67259f8a845f84d))
+* fix path for authRouter in app.js ([a9bf22f](https://github.com/IamJesseP/E-Commerce-API/commit/a9bf22f59c53537dcfb537c399c7dbc0a5f5e62d))
+* move index javascript to avoid helmet bug ([a741b76](https://github.com/IamJesseP/E-Commerce-API/commit/a741b769dc0c600eb92e16dcca09ee44e2e9af95))
+* remove duplicate logic for unique emails ([7765a95](https://github.com/IamJesseP/E-Commerce-API/commit/7765a9501ace08cda5d0ce5b1ee9da0f44d9fbeb))
+* required was not valid on product model ([f0f41c7](https://github.com/IamJesseP/E-Commerce-API/commit/f0f41c78664228f99aeba1f9f60966bf02e9eecf))
