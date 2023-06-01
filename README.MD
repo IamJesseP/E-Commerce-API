@@ -40,7 +40,7 @@ A CRUD api with authentication written with Nodejs, Expressjs, and Mongodb.
 
 ### Database models for Users, Products, Orders, and Reviews
 
-###Aggegregate Functions for Product/Review
+### Aggegregate Functions for Product/Review
 * Average ratings for products are calculcated dynamically through database aggreggate functions
 
 ### Error Handling
