@@ -63,7 +63,7 @@ A CRUD api with authentication written with Nodejs, Expressjs, and Mongodb.
 * Working with a NoSQL database, connecting it to an application
 * Setting up a RESTful API structure
 * Working with authentication and JWT
-* Improved understanding of CRUD API
+* Improved understanding of CRUD API and the REST API best practices
 * Improved understanding code structure and readability
 
 
