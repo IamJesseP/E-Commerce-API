@@ -1,7 +1,7 @@
 # E-Commerce API
 A CRUD api with authentication written with Nodejs, Expressjs, and Mongodb.
 
-**A live server with documentation of the API for this project can be found [here](https://e-commerce-api-4h9r.onrender.com/)**
+**A live server with documentation of the API for this project can be found [here](https://e-commerce-api-iamjesse.onrender.com/)**
 
 ### Technologies
 * HTML/CSS/JS
